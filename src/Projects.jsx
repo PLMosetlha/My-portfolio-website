@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import movieAppImg from "./assets/movie-app.jpg";
 import budgetAppImg from "./assets/budget-app.jpg";
+import portfolioImg from "./assets/portfolio-app.jpg";
 
 const projects = [
   {
@@ -19,11 +20,19 @@ const projects = [
     live: "https://budget-tracker-app-mu.vercel.app/signin",
     image: budgetAppImg,
   },
+  {
+    title: "My portfolio website",
+    description:
+      "Welcome to my personal portfolio website where I showcase my web development skills",
+    github: "https://github.com/PLMosetlha/My-portfolio-website.git",
+    live: "https://my-portfolio-website-smoky-six.vercel.app/",
+    image: portfolioImg,
+  },
 ];
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <h2 className="section-title">Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (

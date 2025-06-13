@@ -29,8 +29,8 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgb(209, 82, 103);
-  color: #fff;
+  background: rgb(147, 216, 107);
+  color: #f8f4f4;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -47,12 +47,12 @@ a {
 }
 
 .navbar-links a {
-  color: #fff;
+  color: rgb(8, 59, 8);
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #00bcd4;
+  color: rgb(75, 161, 75);
 }
 
 .navbar-toggle {
@@ -65,7 +65,7 @@ a {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: rgb(9, 61, 9);
   transition: 0.3s;
 }
 
@@ -147,15 +147,15 @@ a {
 .btn-primary {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #fff;
-  color: #00bcd4;
+  background-color: rgb(9, 61, 9);
+  color: white;
   font-weight: bold;
   border-radius: 25px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #00a1b9;
+  background-color: rgb(75, 161, 75);
   color: #fff;
 }
 
@@ -214,8 +214,6 @@ a {
   width: 90%;
   max-width: 1200px;
 }
-
-/* 2. Navbar toggle and links already responsive for <=768px */
 
 /* 3. Home section responsive updates */
 
@@ -446,4 +444,117 @@ a {
 .project-links a:hover {
   background-color: #007acc;
   color: #fff;
+}
+.contact-info-section {
+  padding: 4rem 2rem;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+.footer {
+  background-color: rgb(49, 92, 24);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Blurry animated background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 30%, #d4fc79, transparent 50%),
+    radial-gradient(circle at 80% 70%, #96e6a1, transparent 50%);
+  z-index: -1;
+  filter: blur(60px);
+  animation: floatBg 15s infinite alternate ease-in-out;
+  opacity: 0.7;
+}
+
+/* Background animation */
+@keyframes floatBg {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  100% {
+    transform: scale(1.2) translate(-20px, 20px);
+  }
+}
+
+/* Optional: soft background color to blend with blur */
+body {
+  background-color: #f7f9fc;
+  scroll-behavior: smooth;
+}
+.resume-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.resume-preview {
+  margin-top: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3b78c1;
 }

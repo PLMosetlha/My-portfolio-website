@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
-import myPhoto from "./assets/myphoto.jpg";
+import myPhoto from "./assets/myphoto.jpeg";
 
 const Home = () => {
   return (
-    <section className="home-section">
+    <section id="home" className="home-section">
       <div className="home-left">
         <img src={myPhoto} alt="My portrait" className="profile-image" />
       </div>
@@ -14,7 +14,7 @@ const Home = () => {
           <h1>Hello, I'm Precious Mosetlha</h1>
           <p>Junior Web Designer</p>
           <a href="#projects" className="btn-primary">
-            View My Work
+            View my projects
           </a>
         </div>
       </div>
