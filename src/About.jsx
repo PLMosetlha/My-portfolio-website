@@ -14,9 +14,9 @@ const About = () => {
       <div className="about-right">
         <h2>About Me</h2>
         <p>
-          I’m a passionate and driven junior web developer with a solid
-          foundation in front-end technologies, gained through an intensive
-          online bootcamp. With hands-on experience building responsive and
+          I am passionate and driven junior web developer with a solid
+          foundation in front-end technologies, gained through a 4 months intensive
+          online bootcamp called ALX Africa. I can build responsive and
           user-friendly applications using HTML, CSS, JavaScript, and React, I’m
           eager to bring my creativity and problem-solving skills into a
           professional setting.
